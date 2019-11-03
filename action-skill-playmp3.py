@@ -5,6 +5,7 @@ from hermes_python.hermes import Hermes
 from hermes_python.ontology import *
 import io
 from subprocess import run
+from playsound import playsound
 
 CONFIG_INI = "config.ini"
 
@@ -12,7 +13,8 @@ MQTT_IP_ADDR: str = "localhost"
 MQTT_PORT: int = 1883
 MQTT_ADDR: str = "{}:{}".format(MQTT_IP_ADDR, str(MQTT_PORT))
 def play_mp3(path):
-    subprocess.run.(['mpg123', '-q', path]).wait()
+    #subprocess.run.(['mpg123', '-q', path]).wait()
+    playsound(path)
 
 class playMP3(object):
 
