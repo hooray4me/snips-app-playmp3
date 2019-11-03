@@ -4,6 +4,8 @@ from snipsTools import SnipsConfigParser
 from hermes_python.hermes import Hermes
 from hermes_python.ontology import *
 import io
+import gi
+#from subprocess import call
 from subprocess import run
 from playsound import playsound
 
@@ -13,7 +15,8 @@ MQTT_IP_ADDR: str = "localhost"
 MQTT_PORT: int = 1883
 MQTT_ADDR: str = "{}:{}".format(MQTT_IP_ADDR, str(MQTT_PORT))
 def play_mp3(path):
-    #subprocess.run.(['mpg123', '-q', path]).wait()
+    #subprocess.run.(['playsound', path])
+    #subprocess.call.(['playsound', path])
     playsound(path)
 
 class playMP3(object):
