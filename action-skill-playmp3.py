@@ -12,7 +12,7 @@ MQTT_IP_ADDR: str = "localhost"
 MQTT_PORT: int = 1883
 MQTT_ADDR: str = "{}:{}".format(MQTT_IP_ADDR, str(MQTT_PORT))
 def play_mp3(path):
-    run.Popen(['mpg123', '-q', path]).wait()
+    run.(['mpg123', '-q', path]).wait()
 
 class playMP3(object):
 
