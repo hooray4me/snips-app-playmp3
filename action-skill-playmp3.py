@@ -31,7 +31,7 @@ class playMP3(object):
     def execplaymp3_callback(self, hermes, intent_message):
 
         if intent_message.slots.playmp3:
-            play_mp3('/home/pi/turndownforwhat.mp3')
+            play_mp3('/media/turndownforwhat.mp3')
             hermes.publish_end_session(intent_message.session_id, "") 
 
     def master_intent_callback(self,hermes, intent_message):
