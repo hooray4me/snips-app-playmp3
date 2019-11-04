@@ -4,7 +4,7 @@ from snipsTools import SnipsConfigParser
 from hermes_python.hermes import Hermes
 from hermes_python.ontology import *
 import io
-from subprocess import Popen
+import subprocess
 #from subprocess import run
 #from playsound import playsound
 
