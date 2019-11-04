@@ -1,5 +1,3 @@
 hermes-python>=0.8
 
-subprocess.run
-playsound
-gi
+subprocess.Popen
